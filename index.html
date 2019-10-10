@@ -58,10 +58,10 @@
         <section>
             <h2>work title</h2>
             <p>
-                    A few of the projects you'll be able to see will be an Eventbrite based application using Google maps
-                    that uses different search paramaters to find events near you! Also there is a train predictor
-                    application, NBA basketball trivia, Game of Thrones Hangman, and a Gif application.
-                </p>
+                A few of the projects you'll be able to see will be an Eventbrite based application using Google maps
+                that uses different search paramaters to find events near you! Also there is a train predictor
+                application, NBA basketball trivia, Game of Thrones Hangman, and a Gif application.
+            </p>
             <div id="used">
                 <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
                 <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
@@ -88,7 +88,7 @@
                 beautiful fiancee, I've been able to make the switch and love every moment of it. Take a look around at
                 some of the projects I've created. I'd love to hear your feedback!
             </p>
-            
+
         </section>
         <section>
             <h2>skills</h2>
@@ -103,10 +103,17 @@
         <section>
             <h2>contact me</h2>
             <p>
-                <form>
-                    <input type="text" placeholder="name" required>
-                    <input type="email" placeholder="email" required><br>
-                    <textarea placeholder="your message" required rows="5"></textarea><br>
+                <form class="gform" method="POST" data-email="rrjethva@gmail.com"
+                    action="https://script.google.com/macros/s/AKfycbxWxB21mYkcTdzxoiQQ2aREEffh9RXI_4dRdOw1yw/exec">
+                    <div class="form-elements">
+                        <input type="text" name="name" placeholder="name" required>
+                        <input type="email" name="email" placeholder="email" required><br>
+                        <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
+                    </div>
+                    <div class="thankyou_message" style="display:none;">
+                            <h2> Thanks for contacting me!
+                                 I will get back to you soon!</h2>
+                          </div>
                     <button class="btn_one">send</button>
                 </form>
             </p>
@@ -118,6 +125,10 @@
     <script src="assets/javascript/index.js" type="text/javascript"></script>
     <script src="assets/javascript/particle.js"></script>
     <script src="assets/javascript/app.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="assets/javascript/email.js"></script>
 </body>
 
 </html>
+
+
+<!-- https://script.google.com/macros/s/AKfycbxWxB21mYkcTdzxoiQQ2aREEffh9RXI_4dRdOw1yw/exec -->
